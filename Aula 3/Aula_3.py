@@ -186,7 +186,7 @@ print(somar_tudo(10, 20))
 print(somar_tudo(5, 10, 15, 20))
 
 
-#Usando **kargs para cadastrar um perfil de dados flexíveis
+#Usando **kwargs para cadastrar um perfil de dados flexíveis
 def criar_perfil(nome, **detalhes):
     print(f"usuário: {nome}")
 
@@ -196,8 +196,17 @@ def criar_perfil(nome, **detalhes):
 
 criar_perfil("Ana", idade=25, curso="Python", ativo=True)
       
+#%%
+def calcular_desconto(preco, percentual):
+    # Print de verificação: checar os valores que entraram 
+    print(f"Entrada --> preço: {preco}, percentual: {percentual}")
+    desconto = preco * percentual / 100
+    print(f"Valor calculado do desconto: {desconto}")
+    return preco - desconto
+#chama a função esperando 10% de desconto sobre 100
 
-
+resultado = calcular_desconto(100, 10)
+print(f"Resultado Final: {resultado}")
 
 
 

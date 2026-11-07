@@ -1,0 +1,11 @@
+1. df = pd.read_csv(caminho csv)
+2. colunas_interesse = ["name", "product_line", "regular_price", "promotional_price"]
+df_resumo = df[colunas_interesse]
+3. df_promocao = df[df["promotion_active]]
+4. df_perfumaria
+
+#medallion layers
+raw - bronze
+trusted - silver
+refined - gold
+
